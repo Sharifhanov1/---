@@ -1,0 +1,5 @@
+import telebot
+bot = telebot.TeleBot('5754158289:AAHKfgbtJXT7JY2tQVep3f-So7I2V1Nv9Vc');
+@bot.message_handlers(commands=['start'])
+def start(message):
+  bot.send_message(message.chat.id, '<b>hi all!</b>', parse_mode='html')
